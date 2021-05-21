@@ -2,7 +2,32 @@
 
 ReScript bindings for [body-scroll-lock](https://github.com/willmcpo/body-scroll-lock).
 
-## disableBodyScroll
+Exposed as `BodyScrollLock` module.
+
+**rescript-body-scroll-lock** X.y.\* means it's compatible with **body-scroll-lock** X.y.\* version.
+
+## Installation
+
+```bash
+npm install body-scroll-lock rescript-body-scroll-lock
+```
+
+rescript-body-scroll-lock should be added to bs-dependencies in your bsconfig.json:
+
+```diff
+{
+  //...
+  "bs-dependencies": [
+    // ...
++   "rescript-body-scroll-lock"
+  ],
+  //...
+}
+```
+
+## Methos
+
+### disableBodyScroll
 
 Disables body scroll while enabling scroll on target element
 
@@ -14,7 +39,7 @@ switch document |> Document.querySelector(".js-scrollable-modal") {
 }
 ```
 
-## enableBodyScroll
+### enableBodyScroll
 
 Enables body scroll and removing listeners on target element
 
@@ -26,7 +51,7 @@ switch document |> Document.querySelector(".js-scrollable-modal") {
 }
 ```
 
-## clearAllBodyScrollLocks
+### clearAllBodyScrollLocks
 
 Clears all scroll locks
 
