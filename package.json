@@ -22,7 +22,8 @@
     "re:clean": "rescript clean -with-deps",
     "re:dev": "rescript build -w"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "rescript": "^9.1.2"
   }
 }
