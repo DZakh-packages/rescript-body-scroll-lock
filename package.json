@@ -1,0 +1,28 @@
+{
+  "name": "rescript-body-scroll-lock",
+  "description": "ReScript bindings for body-scroll-lock",
+  "version": "3.1.0",
+  "peerDependencies": {
+    "body-scroll-lock": "3.1.*"
+  },
+  "homepage": "https://github.com/DZakh-packages/rescript-body-scroll-lock",
+  "bugs": {
+    "url": "https://github.com/DZakh-packages/rescript-body-scroll-lock/issues"
+  },
+  "repository": "github:DZakh-packages/rescript-body-scroll-lock",
+  "license": "MIT",
+  "author": "Dmitry Zakharov",
+  "keywords": [
+    "rescript",
+    "bindings",
+    "body-scroll-lock"
+  ],
+  "scripts": {
+    "re:build": "rescript",
+    "re:clean": "rescript clean -with-deps",
+    "re:dev": "rescript build -w"
+  },
+  "dependencies": {
+    "rescript": "^9.1.2"
+  }
+}
